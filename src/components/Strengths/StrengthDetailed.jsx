@@ -22,7 +22,7 @@ const StrengthDetailed = ({
         <FinanceArt variant={variant} className='rounded-lg sm:rounded-none' />
       </div>
 
-      <div className={`case-item_txt-container w-1/2 flex flex-col gap-2 ${titleDirection} ${textDirection}
+      <div className={`case-item_txt-container w-1/2 flex flex-col gap-2 px-6 ${titleDirection} ${textDirection}
           sm:w-full sm:p-5 sm:gap-3 sm:text-left sm:bg-card`}>
 
         <div className='case-title_container sm:text-left'>

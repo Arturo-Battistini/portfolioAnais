@@ -16,7 +16,7 @@ const StrengthCard = ({ variant, rowDirection, titleDirection, tecDirection, tit
         <FinanceArt variant={variant} className='rounded-lg sm:rounded-none' />
       </div>
 
-      <div className={`case-item_txt-container w-1/2 flex flex-col gap-2 justify-center ${titleDirection}
+      <div className={`case-item_txt-container w-1/2 flex flex-col gap-2 justify-center px-6 ${titleDirection}
           sm:w-full sm:p-5 sm:gap-3 sm:text-left sm:bg-card`}>
         <div className='case-title_container sm:text-left'>
           <h3 className='card-title'>
