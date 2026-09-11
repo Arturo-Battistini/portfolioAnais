@@ -16,8 +16,6 @@ const EmailSidebar = () => {
       sm:flex-row"
     >
       <span
-        data-aos="fade-left"
-        data-aos-delay="1200"
         onClick={handleScrollToContact}
         title={profile.email}
         className="email [writing-mode:vertical-lr] cursor-pointer transition-all duration-300 hover:text-accent hover:tracking-widest

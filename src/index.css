@@ -9,6 +9,16 @@
   scroll-behavior: smooth;
 }
 
+/* Seguro contra scroll horizontal: este es un sitio de una sola columna,
+   nunca debería poder desplazarse hacia los lados. Si algún elemento suelto
+   se desborda (animación mal reseteada, etc.), esto lo recorta en vez de
+   dejar que arrastre a toda la página. */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 @layer components {
 
   /* estilos por defecto de las secciones */
