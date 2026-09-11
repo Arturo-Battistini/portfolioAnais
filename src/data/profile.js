@@ -58,29 +58,36 @@ export const training = [
 // Categorías de herramientas y conocimientos reales (para la sección "Herramientas y Software")
 export const toolCategories = {
   accounting: [
-    { name: 'Excel avanzado', level: '95%', desc: { es: 'Modelos, tablas dinámicas', en: 'Models, pivot tables' } },
-    { name: 'Nubox', level: '90%', desc: { es: 'Contabilidad (Chile)', en: 'Accounting (Chile)' } },
-    { name: 'Contalive / Nowxia', level: '85%', desc: { es: 'Contabilidad y facturación', en: 'Accounting & invoicing' } },
-    { name: 'SAP', level: '65%', desc: { es: 'Registro de producción', en: 'Production records' } }
+    { name: { es: 'Excel avanzado', en: 'Advanced Excel' }, level: '95%', desc: { es: 'Modelos, tablas dinámicas', en: 'Models, pivot tables' } },
+    { name: { es: 'Nubox', en: 'Nubox' }, level: '90%', desc: { es: 'Contabilidad (Chile)', en: 'Accounting (Chile)' } },
+    { name: { es: 'Contalive / Nowxia', en: 'Contalive / Nowxia' }, level: '85%', desc: { es: 'Contabilidad y facturación', en: 'Accounting & invoicing' } },
+    { name: { es: 'SAP', en: 'SAP' }, level: '65%', desc: { es: 'Registro de producción', en: 'Production records' } }
   ],
   payroll: [
-    { name: 'Nóminas y contratos', level: '95%', desc: { es: 'Ciclo laboral completo', en: 'End-to-end payroll' } },
-    { name: 'Finiquitos y despidos', level: '90%', desc: { es: 'Documentación laboral', en: 'Labour documentation' } },
-    { name: 'Altas y bajas', level: '90%', desc: { es: 'Ante autoridad laboral', en: 'With labour authority' } },
-    { name: 'Saint', level: '80%', desc: { es: 'Gestión y cobros', en: 'Management & collections' } }
+    { name: { es: 'Nóminas y contratos', en: 'Payroll & contracts' }, level: '95%', desc: { es: 'Ciclo laboral completo', en: 'End-to-end payroll' } },
+    { name: { es: 'Finiquitos y despidos', en: 'Terminations & severance' }, level: '90%', desc: { es: 'Documentación laboral', en: 'Labour documentation' } },
+    { name: { es: 'Altas y bajas', en: 'Hires & terminations' }, level: '90%', desc: { es: 'Ante autoridad laboral', en: 'With labour authority' } },
+    { name: { es: 'Saint', en: 'Saint' }, level: '80%', desc: { es: 'Gestión y cobros', en: 'Management & collections' } }
   ],
   spain: [
-    { name: 'ContaSol', level: '45%', desc: { es: 'En formación (SEPE)', en: 'In training (SEPE)' } },
-    { name: 'PGC', level: '35%', desc: { es: 'Plan General Contable', en: 'Spanish GAAP' } },
-    { name: 'IVA / IRPF España', level: '35%', desc: { es: 'Normativa fiscal', en: 'Tax regulations' } },
-    { name: 'Seguridad Social', level: '30%', desc: { es: 'Cotizaciones', en: 'Contributions' } }
+    { name: { es: 'ContaSol', en: 'ContaSol' }, level: '45%', desc: { es: 'En formación (SEPE)', en: 'In training (SEPE)' } },
+    { name: { es: 'PGC', en: 'PGC' }, level: '35%', desc: { es: 'Plan General Contable', en: 'Spanish GAAP' } },
+    { name: { es: 'IVA / IRPF España', en: 'VAT / IRPF Spain' }, level: '35%', desc: { es: 'Normativa fiscal', en: 'Tax regulations' } },
+    { name: { es: 'Seguridad Social', en: 'Social Security' }, level: '30%', desc: { es: 'Cotizaciones', en: 'Contributions' } }
   ],
   languages: [
-    { name: 'Español', level: '100%', desc: { es: 'Nativo', en: 'Native' } },
-    { name: 'Italiano', level: '40%', desc: { es: 'A2 certificado', en: 'A2, certified' } },
-    { name: 'Inglés', level: '35%', desc: { es: 'A2', en: 'A2' } }
+    { name: { es: 'Español', en: 'Spanish' }, level: '100%', desc: { es: 'Nativo', en: 'Native' } },
+    { name: { es: 'Italiano', en: 'Italian' }, level: '40%', desc: { es: 'A2 certificado', en: 'A2, certified' } },
+    { name: { es: 'Inglés', en: 'English' }, level: '35%', desc: { es: 'A2', en: 'A2' } }
   ]
 }
 
 // Herramientas de uso diario, para la sección "Sobre mí"
-export const dailyTools = ['Nubox', 'Contalive / Nowxia', 'SAP', 'Saint', 'Excel avanzado', 'Google Drive']
+export const dailyTools = [
+  { es: 'Nubox', en: 'Nubox' },
+  { es: 'Contalive / Nowxia', en: 'Contalive / Nowxia' },
+  { es: 'SAP', en: 'SAP' },
+  { es: 'Saint', en: 'Saint' },
+  { es: 'Excel avanzado', en: 'Advanced Excel' },
+  { es: 'Google Drive', en: 'Google Drive' }
+]

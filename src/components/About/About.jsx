@@ -38,7 +38,7 @@ const About = () => {
           <article className='aboutme-list-container flex w-full '>
             <ul className='aboutme-list w-full flex flex-wrap gap-3'>
               {dailyTools.map((tool) => (
-                <li key={tool} className='about-item'>{tool}</li>
+                <li key={tool.es} className='about-item'>{tool[language ? 'en' : 'es']}</li>
               ))}
             </ul>
           </article>

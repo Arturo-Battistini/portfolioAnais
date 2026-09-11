@@ -71,7 +71,7 @@ const Tools = () => {
           >
             <div className='text-center'>
               <div className='w-2 h-2 rounded-full mx-auto mb-2 bg-accent' />
-              <h4 className='text-xs font-semibold text-titleText mb-1'>{tool.name}</h4>
+              <h4 className='text-xs font-semibold text-titleText mb-1'>{tool.name[lang]}</h4>
               <p className='text-xs text-pText opacity-80'>{tool.desc[lang]}</p>
             </div>
 

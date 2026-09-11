@@ -9,11 +9,12 @@ import FinanceArt from './FinanceArt'
  */
 const StrengthDetailed = ({
   variant, rowDirection, titleDirection, tecDirection, textDirection, simbolDirection,
-  title, content, featuresTitle, tags = []
+  title, content, featuresTitle, tags = { es: [], en: [] }
 }) => {
   const { language } = useLanguage()
   const lang = language ? 'en' : 'es'
   const selectedContent = content[lang]
+  const tagList = tags[lang]
 
   return (
     <div className={`case-item flex ${rowDirection} sm:flex-col sm:rounded-lg sm:overflow-hidden sm:border sm:border-accent/10`}>
@@ -69,7 +70,7 @@ const StrengthDetailed = ({
 
         <div className={`case-tags text-pText text-xs flex flex-col gap-1 ${tecDirection} sm:items-start`}>
           <ul className='tags flex flex-wrap justify-between gap-3 mt-3 sm:justify-start'>
-            {tags.map((tag) => (
+            {tagList.map((tag) => (
               <li key={tag} className='about-item text-xs'>{tag}</li>
             ))}
           </ul>

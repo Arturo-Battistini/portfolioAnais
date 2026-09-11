@@ -6,8 +6,9 @@ import FinanceArt from './FinanceArt'
  * Tarjeta simple de fortaleza: una capacidad concreta contada en primera
  * persona, con una ilustración temática y algunas etiquetas relacionadas.
  */
-const StrengthCard = ({ variant, rowDirection, titleDirection, tecDirection, title, description, tags = [] }) => {
+const StrengthCard = ({ variant, rowDirection, titleDirection, tecDirection, title, description, tags = { es: [], en: [] } }) => {
   const { language } = useLanguage()
+  const tagList = tags[language ? 'en' : 'es']
 
   return (
     <div className={`case-item flex ${rowDirection} sm:flex-col sm:rounded-lg sm:overflow-hidden sm:border sm:border-accent/10`}>
@@ -31,7 +32,7 @@ const StrengthCard = ({ variant, rowDirection, titleDirection, tecDirection, tit
 
         <div className={`case-tags text-pText text-xs flex flex-col gap-1 ${tecDirection} sm:items-start`}>
           <ul className='tags flex flex-wrap justify-between gap-3 mt-3 sm:justify-start'>
-            {tags.map((tag) => (
+            {tagList.map((tag) => (
               <li key={tag} className='about-item text-xs'>{tag}</li>
             ))}
           </ul>

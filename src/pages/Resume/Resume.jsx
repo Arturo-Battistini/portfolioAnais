@@ -13,7 +13,7 @@ const Resume = () => {
     ...toolCategories.accounting,
     ...toolCategories.payroll,
     ...toolCategories.spain
-  ].map((t) => t.name)
+  ].map((t) => t.name[lang])
 
   return (
     <div className='w-full min-h-screen flex flex-col items-center px-4 py-10'>
@@ -126,7 +126,7 @@ const Resume = () => {
             </h2>
             <ul className='space-y-1'>
               {toolCategories.languages.map((item) => (
-                <li key={item.name} className='text-xs'>{item.name} — {item.desc[lang]}</li>
+                <li key={item.name.es} className='text-xs'>{item.name[lang]} — {item.desc[lang]}</li>
               ))}
             </ul>
           </section>

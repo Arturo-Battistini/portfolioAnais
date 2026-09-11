@@ -40,7 +40,10 @@ export const detailedStrengths = [
         ]
       }
     },
-    tags: ['Cierre del ejercicio', 'Conciliación bancaria', 'Liquidación de IVA', 'Planificación fiscal']
+    tags: {
+      es: ['Cierre del ejercicio', 'Conciliación bancaria', 'Liquidación de IVA', 'Planificación fiscal'],
+      en: ['Year-end closing', 'Bank reconciliation', 'VAT filing', 'Tax planning']
+    }
   },
   {
     variant: 'payroll',
@@ -76,7 +79,10 @@ export const detailedStrengths = [
         ]
       }
     },
-    tags: ['Nóminas', 'Contratos', 'Finiquitos', 'Seguridad Social (en formación)']
+    tags: {
+      es: ['Nóminas', 'Contratos', 'Finiquitos', 'Seguridad Social (en formación)'],
+      en: ['Payroll', 'Contracts', 'Final settlements', 'Social Security (in training)']
+    }
   }
 ]
 
@@ -88,7 +94,10 @@ export const simpleStrengths = [
       es: 'Superviso y formo equipos, reparto carteras y tareas, y soy el primer punto de contacto para resolver dudas del día a día. Contribuí a que el despacho donde trabajo pasara de 20 a 189 clientes activos, lo que me llevó a entrar como socia en 2021.',
       en: 'I supervise and train teams, allocate portfolios and tasks, and I’m the first point of contact for day-to-day questions. I helped grow the firm I work at from 20 to 189 active clients, which led to me becoming a partner in 2021.'
     },
-    tags: ['Liderazgo de equipos', 'Formación', 'Captación de clientes']
+    tags: {
+      es: ['Liderazgo de equipos', 'Formación', 'Captación de clientes'],
+      en: ['Team leadership', 'Training', 'Client acquisition']
+    }
   },
   {
     variant: 'sii',
@@ -97,7 +106,10 @@ export const simpleStrengths = [
       es: 'Acompaño a cada cliente nuevo desde el primer día: le explico sus obligaciones fiscales y de facturación, y traduzco la información contable en informes claros que realmente ayudan a tomar decisiones.',
       en: 'I support every new client from day one: explaining their tax and invoicing obligations, and turning accounting information into clear reports that actually help with decision-making.'
     },
-    tags: ['Asesoramiento fiscal', 'Atención al cliente', 'Informes de gestión']
+    tags: {
+      es: ['Asesoramiento fiscal', 'Atención al cliente', 'Informes de gestión'],
+      en: ['Tax advisory', 'Client service', 'Management reports']
+    }
   },
   {
     variant: 'erp',
@@ -106,7 +118,10 @@ export const simpleStrengths = [
       es: 'He trabajado con distintas normativas y sistemas contables en Chile, Ecuador y Venezuela, y ahora estoy formándome en la normativa española y en ContaSol. Aprender un sistema nuevo rápido y sin perder rigor es algo que ya he hecho varias veces.',
       en: 'I’ve worked with different regulations and accounting systems in Chile, Ecuador and Venezuela, and I’m now training in Spanish regulations and ContaSol. Learning a new system fast without losing rigor is something I’ve already done more than once.'
     },
-    tags: ['SAP', 'Nubox', 'ContaSol (en formación)', 'Multipaís']
+    tags: {
+      es: ['SAP', 'Nubox', 'ContaSol (en formación)', 'Multipaís'],
+      en: ['SAP', 'Nubox', 'ContaSol (in training)', 'Multi-country']
+    }
   },
   {
     variant: 'aml',
@@ -115,6 +130,9 @@ export const simpleStrengths = [
       es: 'Cuando algo no funciona, lo rediseño: implementé el trabajo colaborativo en la nube para centralizar la información de clientes y rehíce los informes que reciben, y en una fábrica rediseñé los partes de consumo en planta para que los datos fueran fiables.',
       en: 'When something isn’t working, I redesign it: I introduced cloud-based collaboration to centralise client information and reworked the reports clients receive, and at a factory I redesigned the plant consumption forms to make the data reliable.'
     },
-    tags: ['Google Drive', 'Mejora continua', 'Control de inventario']
+    tags: {
+      es: ['Google Drive', 'Mejora continua', 'Control de inventario'],
+      en: ['Google Drive', 'Continuous improvement', 'Inventory control']
+    }
   }
 ]
