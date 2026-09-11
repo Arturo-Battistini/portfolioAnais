@@ -4,6 +4,7 @@ import './index.css'
 import { AppProvider } from './context/AppContext'
 
 import PageShell from './components/Layout/PageShell'
+import ScrollToTop from './components/Layout/ScrollToTop'
 import Home from './components/Home/Home'
 import Resume from './pages/Resume/Resume'
 
@@ -19,6 +20,7 @@ const App = () => {
   return (
     <HashRouter>
       <AppProvider>
+        <ScrollToTop />
         <PageShell>
           <AppRoutes />
         </PageShell>

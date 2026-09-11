@@ -5,16 +5,16 @@ import { profile } from '../data/profile'
  * Servicio de envío de correo para el formulario de contacto, basado en
  * EmailJS (https://www.emailjs.com/).
  *
- * ⚠️ DEMO: los identificadores de abajo son placeholders y NO son válidos.
- * El formulario se ve y se valida correctamente, pero no enviará correos
- * reales hasta que se sustituyan por las credenciales de una cuenta propia
- * de EmailJS (service ID, template ID y public key).
+ * Cuenta de EmailJS conectada a arojasdbatt@gmail.com (servicio Gmail).
+ * Los templates son los mismos que ya existían en el portafolio original
+ * (reutilizados a propósito); el destinatario real lo decide el valor
+ * `to_email` que se envía desde este archivo, no el template en sí.
  */
 export const EmailService = {
-  serviceId: 'service_demo_id',
-  templateId: 'template_demo_owner',
-  confirmationTemplateId: 'template_demo_client',
-  publicKey: 'DEMO_PUBLIC_KEY',
+  serviceId: 'service_n56vykx',
+  templateId: 'template_zvx6vvl', // "para mi" — notificación al dueño del portafolio
+  confirmationTemplateId: 'template_gdu05bd', // "para el cliente" — confirmación al visitante
+  publicKey: 'FFOHIrXtQ9j0y3UXO',
 
   init () {
     emailjs.init(this.publicKey)

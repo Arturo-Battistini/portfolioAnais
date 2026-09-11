@@ -30,10 +30,8 @@ desincronizarse nunca entre la web y el CV descargable:
 - Terminología laboral: siempre "término local (equivalente en España)"; la
   normativa española se marca como "en formación", nunca como dominada.
 
-**Pendiente de configurar antes de publicar:**
-- `src/services/emailService.js` — credenciales de EmailJS (service ID,
-  template IDs, public key) para que el formulario de contacto envíe
-  correos reales a `arojasdbatt@gmail.com`.
+**Formulario de contacto:** ya configurado con una cuenta real de EmailJS
+(Gmail conectado a `arojasdbatt@gmail.com`); ver `src/services/emailService.js`.
 
 ## CV descargable
 

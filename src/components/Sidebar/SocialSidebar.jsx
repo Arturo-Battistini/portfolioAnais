@@ -15,8 +15,8 @@ const SocialSidebar = () => {
       </div>
       <span className='font-lato text-pText font-thin text-center hover:text-accent transition-all duration-300 text-[8px] mb-1 tracking-wider'>
         {!language
-          ? 'Diseño inspirado en el portafolio original de Arturo Battistini, adaptado para un perfil contable.'
-          : 'Design inspired by Arturo Battistini\'s original portfolio, adapted for an accounting profile.'}
+          ? 'Diseñado y creado por Arturo Battistini.'
+          : 'Designed and created by Arturo Battistini.'}
       </span>
     </aside>
   )
